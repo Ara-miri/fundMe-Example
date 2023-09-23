@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="mystyle.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="mainDiv">
+            <div class="connectButtonDiv">
+                <button id="connectButton">Connect Wallet</button>
+            </div>
+            <div class="content">
+                <!-- <form> -->
+                <div class="form-wrapper">
+                    <form>
+                        <label for="ethAmount">ETH Amount:</label>
+                        <input id="ethAmount" placeholder="0.1" type="number" />
+                    </form>
+                    <button type="button" id="fundButton">Fund</button>
+                </div>
+                <button id="balanceButton">getBalance</button>
+                <button id="withdrawButton">Withdraw</button>
+                <button id="getTimeButton">Estimated Time</button>
+            </div>
+        </div>
+    </body>
+    <script src="./index.js" type="module"></script>
+</html>

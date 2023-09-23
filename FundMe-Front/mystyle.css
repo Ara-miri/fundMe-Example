@@ -1,0 +1,130 @@
+body {
+    height: 100vh;
+    margin: 15px;
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    gap: 40px;
+    background: #f3ddaf;
+    border: #5a3000 2px dashed;
+    border-radius: 20px;
+}
+
+.mainDiv {
+    border: #5a3000 2px dashed;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-right: 10px;
+}
+
+button {
+    margin: 5px;
+    border: 2px solid #5a3000;
+    color: #5a3000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+button#connectButton {
+    --c: #f7d181; /* the color*/
+
+    box-shadow: 0 0 0 0.2em inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p, 0%)) 0%,
+        var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p, 0%)) 100%;
+    background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+    outline-offset: 0.1em;
+    transition: background-size 0.4s, background-position 0s 0.4s;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    margin-bottom: 10px;
+}
+
+button#connectButton:hover {
+    --_p: 100%;
+    transition: background-position 0.4s, background-size 0s;
+}
+
+button#connectButton:active {
+    box-shadow: 0 0 9e9Q inset #0009;
+    background-color: var(--c);
+    color: #fff;
+}
+
+button#balanceButton,
+button#withdrawButton,
+button#getTimeButton,
+button#fundButton {
+  --c: #f7d181; /* the color*/
+
+    box-shadow: 0 0 0 0.1em inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p, 0%)) 0%,
+        var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p, 0%)) 100%;
+    background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+    outline-offset: 0.1em;
+    transition: background-size 0.4s, background-position 0s 0.4s;
+}
+button#balanceButton:hover,
+button#withdrawButton:hover,
+button#getTimeButton:hover,
+button#fundButton:hover {
+    --_p: 100%;
+    transition: background-position 0.4s, background-size 0s;
+}
+button#balanceButton:active,
+button#withdrawButton:active,
+button#getTimeButton:active,
+button#fundButton:active {
+    box-shadow: 0 0 9e9Q inset #0009;
+    background-color: var(--c);
+    color: #fff;
+}
+
+button#withdrawButton:disabled {
+    opacity: 0.5;
+}
+
+input {
+    padding: 10px;
+    border: 1.4px solid #5a3000;
+    background-color: #f3ddaf;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    color: #5a3000;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
